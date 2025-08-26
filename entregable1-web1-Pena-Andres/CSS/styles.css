@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+header {
+  box-shadow: #222 0px 4px 6px -1px, #222 0px 2px 4px -1px;
+  position: fixed;
+  filter: grayscale(40%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 15vh;
+  background-image: url('../IMG/ardisPortfolio-6.png');
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20%;
+  font-weight: bold;
+
+}
+
+.intermedio {
+  gap: 5px;
+  text-align: center;
+  margin-top: 20vh;
+  width: 100vw;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+}
+
+#container-logo {
+  border-right: #ffffff 2px solid;
+  width: 20vh;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#container-logo img {
+
+  width: 30vh;
+  height: auto;
+}
+
+.imagen-header {
+  filter: blur(1px);
+}
+
+
+ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+li a {
+  font-weight: bolder;
+  text-decoration: none;
+  color: white;
+}
+
+
+.logo-instagram {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+}
+#caja{  
+  border-radius: 2%;
+  width: 100%;
+  height: auto;
+  filter: brightness()(90deg);
+  background-image: url('../Img/IMG_7814.jpg');
+  background-size: cover;  
+  
+}
+
+
+main {
+  width: 100vw;
+  min-height: 300vh;
+  background-color: white;
+  display: inline-grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 8px;
+}
+#contacto{
+  text-align: center;
+  justify-content: center;
+  min-height: 70vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 3%;
+}
+
+.container-img-doble {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: auto;
+  width: auto;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+
+
+}
+
+.img-principal {
+  width: 100vh;
+  height: auto;
+}
+
+
+#biografia {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 40px;
+
+}
+
+.biografia-text {
+  color: rgb(42, 11, 42);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+
+
+}
+
+.biografia-text h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: #212d23;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+}
+
+ol {
+  font-size: x-large;
+  font-weight: bold;
+  list-style-type: decimal;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+h3 {
+  font-size: x-large;
+  font-weight: lighter;
+}
+
+@media (max-width: 915px) {
+  header .imagen-header {
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+    padding: 10px;
+  }
+  header ul li a {
+    display: none;
+  }
+  #container-logo {
+    border-right: none;
+    gap: 0;
+  }
+  ul {
+    font-size: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  ul li {
+    margin: 0;
+  }
+  .logo-instagram {
+    margin-top: 10px;
+  }
+  .img-principal {
+    width: 100vw;
+    margin-top: 15vh;
+  }
+  .intermedio {
+    overflow: hidden;
+    background: linear-gradient(rgb(221, 221, 221), rgb(255, 255, 255));
+    height: 50vh;
+    width: auto;
+    margin-top: 15vh;
+  }
+  h3 {
+    height: fit-content;
+    font-size: large;
+  }
+  .biografia-text h1 {
+    width: fit-content;
+    font-size: 2em;
+  }
+  .biografia-text ol {
+    font-size: medium;
+  }
+  #contacto {
+    font-size: small;
+    display: inline-block;   
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    padding: 5%;
+    gap: 20px;
+  }
+
+}
+
+/* Imágenes en 2 columnas en pantallas grandes */
+@media (min-width: 915px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+
+  }
+}
+
